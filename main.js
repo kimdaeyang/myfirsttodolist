@@ -6,12 +6,16 @@ let filteredList = [];
 let taskList = [];
 let timeArea =document.getElementById("time-area");
 
-let date = new Date();
-let year = date.getFullYear();
-let month = date.getMonth()+1;
-let day = date.getDate();
+// Time
+const d = new Date();
+let year = d.getFullYear();
+let month = d.getMonth()+1;
+let date = d.getDate();
 
-timeArea.innerHTML = `${year}년 ${month}월 ${day}일`;
+const days = ["일","월","화","수","목","금","토"]
+let day = days[d.getDay()];
+
+timeArea.innerHTML = `${year}년 ${month}월 ${date}일 ${day}`;
 
 addButton.addEventListener("click", add);
 
