@@ -8,7 +8,7 @@ let timeArea =document.getElementById("time-area");
 
 let date = new Date();
 let year = date.getFullYear();
-let month = date.getMonth();
+let month = date.getMonth()+1;
 let day = date.getDate();
 
 timeArea.innerHTML = `${year}년 ${month}월 ${day}일`;
