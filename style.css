@@ -1,0 +1,64 @@
+body {
+  background-image: url(images/abstract-background-284.jpg);
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0px;
+}
+
+.title {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 2.5em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.container {
+  border: 1px solid gray;
+  background-color: white;
+  height: 100%;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+.task-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px dotted lightgray;
+}
+.task-done {
+  text-decoration: line-through;
+}
+button {
+  border: 1px solid lightgray;
+}
+#input-task {
+  border: 1px solid lightgray;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#time-area {
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  margin: 1em;
+  text-align: center;
+}
+.uncheck {
+  background-color: black;
+  color: white;
+}
