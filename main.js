@@ -4,15 +4,15 @@ let tabs = document.querySelectorAll(".tabs div");
 let mode = "all";
 let filteredList = [];
 let taskList = [];
-let timeArea =document.getElementById("time-area");
+let timeArea = document.getElementById("time-area");
 
 // Time
 const d = new Date();
 let year = d.getFullYear();
-let month = d.getMonth()+1;
+let month = d.getMonth() + 1;
 let date = d.getDate();
 
-const days = ["일","월","화","수","목","금","토"]
+const days = ["일", "월", "화", "수", "목", "금", "토"];
 let day = days[d.getDay()];
 
 timeArea.innerHTML = `${year}년 ${month}월 ${date}일 ${day}`;
@@ -35,8 +35,9 @@ function add() {
   let taskContent = inputTask.value;
   let task = { content: taskContent, isDone: false, id: random() };
   taskList.push(task);
+
   render();
-  inputTask.value="";
+  inputTask.value = "";
 }
 
 function filter(event) {
